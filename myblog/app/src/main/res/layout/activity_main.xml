@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myTitle"
+        android:text="Wonseok's Blog"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="#ffffff"
+        android:background="#ff9400"
+        android:fontFamily="sans-serif-light"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myTitle">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 여기에 동적으로 추가될 TextView 및 ImageView가 들어갈 자리입니다. -->
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
